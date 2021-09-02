@@ -45,7 +45,7 @@ from: bdgenomics/rhapsody:1.9.1
     export DEBIAN_FRONTEND=noninteractive
     
     # install nodejs
-    apt-get clean && apt-get update -y && apt-get upgrade -y
+    apt-get clean && apt-get --allow-releaseinfo-change update -y && apt-get upgrade -y
     apt-get install -y nodejs git
     
     # install cwltool (use pip to get newest version)
